@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  nav {
+    background-color: #aa5040;
+    padding: 10px;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  #navbar h2 {
+    margin: 0;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  #navbar ul li {
+    margin-left: 10px;
+  }
+  
+  #navbar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .welcome {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search input[type="text"] {
+    padding: 10px;
+    width: 190px;
+    border-radius: 10px;
+  }
+  
+  .search button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  /* Featured books section styles */
+  .featured-books {
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .featured-books h2 {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .img1 {
+    width: 150px;
+    display: flex;
+  }
+  
+  .img1 img {
+    width: 100%;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #aa5040;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .static-pages ul {
+    list-style-type: none;
+  }
+  
+  .static-pages ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .static-pages ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .i1 {
+    float: left;
+  }
+  
+  .i2 {
+    float: left;
+  }
+  
+  .i3 {
+    float: left;
+  }
+  
