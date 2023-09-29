@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const navbarDiv = document.getElementById('navbar');
     const nav = document.createElement('nav');
     nav.style.backgroundColor = '#aa5040';
-    nav.style.padding = '10px'; 
+    nav.style.padding = '10px';
 
     nav.innerHTML = `
         <ul style="display: flex; justify-content: space-between; align-items: center;">
@@ -10,19 +10,19 @@ window.addEventListener('DOMContentLoaded', () => {
                 <strong style="font-weight: bold;">E-library</strong>
             </li>
             <li style="display: inline; margin-left: auto;">
-                <a href="../index.html" style="text-decoration: none; color: #333;">Home</a>
+                <a href="../index.html" class="nav-link">Home</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="books.html" style="text-decoration: none; color: #333;">Books</a>
+                <a href="books.html" class="nav-link">Books</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="login.html" style="text-decoration: none; color: #333;">Log In</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="about-us.html" style="text-decoration: none; color: #333;">About Us</a>
+            <a href="contact.html" class="nav-link">Contact</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="contact.html" style="text-decoration: none; color: #333;">Contact</a>
+                <a href="login.html" class="nav-link">Log In</a>
             </li>
         </ul>
     `;

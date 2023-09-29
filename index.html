@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Library</title>
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-  <nav>
+  <header>
     <div id="navbar">
       <h2>E-Library</h2>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="./html/login.html">Log In</a></li>
-        <li><a href="./html/about-us.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pages/books.html">Books</a></li>
+        <li><a href="pages/login.html">Log In</a></li>
+        <li><a href="pages/about-us.html">About Us</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </header>
 
-  <div class="welcome">
-    <h1>Welcome to the E-Library</h1>
-    <p>A brief introduction to the e-library.</p>
-  </div>
-
-  <div class="search">
-    <input type="text" placeholder="Search for books">
-    <button type="submit">Search</button>
-  </div>
-
-  <section class="featured-books">
-    <h2>Featured Books</h2>
-    <div class="img1">
-        <img class="i1" src="./static/book1.jpeg" >
-        <img class="i2" src="./static/book2.jpeg" >
-        <img class="i3" src="./static/book3.jpeg" >       
+  <main>
+    <div class="welcome">
+      <h1>Welcome to the E-Library</h1>
+      <p>A brief introduction to the e-library.</p>
     </div>
-  </section>
+
+    <div class="search">
+      <input type="text" placeholder="Search for books">
+    <button type="submit">Search</button>
+    </div>
+
+    <section class="featured-books">
+      <h2>Featured Books</h2>
+      <div class="img1">
+        <img class="book-img" src="static/book1.jpeg">
+        <img class="book-img" src="static/book2.jpeg">
+        <img class="book-img" src="static/book3.jpeg">
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="contact-info">
@@ -43,12 +49,13 @@
     </div>
     <div class="static-pages">
       <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+        <li><a href="pages/terms.html">Terms of Service</a></li>
       </ul>
     </div>
   </footer>
 </body>
+
 </html>
