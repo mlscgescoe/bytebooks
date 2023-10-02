@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const nav = document.createElement('nav');
     nav.style.backgroundColor = '#aa5040';
     nav.style.padding = '10px';
+    nav.style.textDecoration = 'none';
+    nav.style.textDecorationColor = '#ffff';
 
     nav.innerHTML = `
         <ul style="display: flex; justify-content: space-between; align-items: center;">
