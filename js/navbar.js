@@ -29,5 +29,11 @@ window.addEventListener('DOMContentLoaded', () => {
         </ul>
     `;
 
+    const navLinks = nav.querySelectorAll('a.nav-link');
+    navLinks.forEach(link => {
+        link.style.color = '#ededed';
+        link.style.textDecoration = 'none';
+    });
+
     navbarDiv.appendChild(nav);
 });
