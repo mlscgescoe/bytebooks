@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+navbar {
+
+    text-decoration: none;
+    text-decoration-color: #fff;
+
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -19,7 +25,7 @@ body {
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
-  background: rgb(201, 150, 49);
+  background: rgb(168, 128, 37);
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -55,6 +61,7 @@ i {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
+    padding-bottom: 13px;
 }
 
 .remember-forget {
@@ -75,14 +82,14 @@ i {
 
 .forgot-password {
     text-decoration: none;
-    color: #3498db;
+    color: #18cdff;
 }
 
 .btn {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #3498db;
+    background-color: #bd5d2a;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -96,7 +103,7 @@ i {
 
 .register-link a {
     text-decoration: none;
-    color: #3498db;
+    color: #18cdff;
 }
 
 

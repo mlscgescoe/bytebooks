@@ -3,6 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const nav = document.createElement('nav');
     nav.style.backgroundColor = '#aa5040';
     nav.style.padding = '5px';
+    nav.style.textDecoration = 'none';
+    nav.style.textDecorationColor = '#ffff';
 
     nav.innerHTML = `
         <ul style="display: flex; justify-content: space-between; align-items: center;">
@@ -26,6 +28,12 @@ window.addEventListener('DOMContentLoaded', () => {
             </li>
         </ul>
     `;
+
+    const navLinks = nav.querySelectorAll('a.nav-link');
+    navLinks.forEach(link => {
+        link.style.color = '#ededed';
+        link.style.textDecoration = 'none';
+    });
 
     navbarDiv.appendChild(nav);
 
