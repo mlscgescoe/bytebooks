@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #aa5040;
+    --text-color-light: #ededed;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+
+/****** Header & Navbar ******/
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+header > #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header > #navbar h2.site-name {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+header > #navbar ul.navbar-links {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+header > #navbar > ul.navbar-links li.nav-links {
+    margin-left: 16px;
+    border-bottom-width: 0px;
+    margin-bottom: 0px;
+}
+
+header > #navbar > ul.navbar-links li.nav-links a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    transition: color 0.2s;
+}
+
+header > #navbar > ul.navbar-links li.nav-links a:hover {
+    color: rgb(255, 199, 199);
+}
+
+
+/****** Footer ******/
+footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    line-height: normal;
+}
+
+footer > .contact-info {
+    margin-top: 20px;
+}
+
+footer > .contact-info p {
+    margin-bottom: 10px;
+    color: var(--text-color-light);
+}
+
+footer > .static-pages > ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+footer > .static-pages ul > li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer > .static-pages ul > li a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    transition: color 0.2s;
+}
+
+footer > .static-pages ul > li a:hover {
+    color: rgb(255, 199, 199);
+}
+
+.book-img {
+    float: left;
+}
