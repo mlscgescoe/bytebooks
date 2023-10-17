@@ -25,7 +25,7 @@ body {
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
-  background: rgb(168, 128, 37);
+  background: #f0f4f8;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -82,19 +82,24 @@ i {
 
 .forgot-password {
     text-decoration: none;
-    color: #18cdff;
+    color: #218aa7;
 }
 
 .btn {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #bd5d2a;
+    background-color: #aa5040;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover{
+    background-color: #7b2e20;
 }
 
 .register-link {
@@ -103,7 +108,7 @@ i {
 
 .register-link a {
     text-decoration: none;
-    color: #18cdff;
+    color: #218aa7;
 }
 
 
