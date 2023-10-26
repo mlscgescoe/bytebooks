@@ -1,92 +1,137 @@
-
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Library</title>
-  <link rel="stylesheet" href="/css/books.css">
-</head>
-
-<body>
-  <header>
-    <div id="navbar">
-      <h2>E-Library</h2>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/books.html">Books</a></li>
-        <li><a href="/pages/login.html">Log In</a></li>
-        <li><a href="/pages/about-us.html">About Us</a></li>
-        <li><a href="/pages/contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <div class="welcome">
-      <h1>Welcome to the E-Library</h1>
-      <p>A brief introduction to the e-library.</p>
-    </div>
-
-    <div class="search">
-      <input type="text" placeholder="Search for books">
-    <button type="submit">Search</button>
-    </div>
-
-    <section class="featured-books">
-      <h2>Books</h2>
-      <div class="img1">
-        <div class="book-container">
-          <img class="book-img" src="/static/book1.jpeg">
-          <button class="add-to-cart-button">Add to Cart</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Library</title>
+        <link rel="stylesheet" href="/css/books.css">
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <h2>E-Library</h2>
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/pages/books.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="/pages/login.html">Log In</a>
+                    </li>
+                    <li>
+                        <a href="/pages/about-us.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="welcome">
+                <h1>Welcome to the E-Library</h1>
+                <p>A brief introduction to the e-library.</p>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search for books">
+                <button type="submit">Search</button>
+            </div>
+            <section class="featured-books">
+                <h2>Books</h2>
+                <div class="img1">
+                    <div class="book-container">
+                        <img class="book-img" src="/static/book1.jpeg">
+                        <button class="add-to-cart-button" onclick="addToCart('B1', 19.99,'/static/book1.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="book-container">
+                        <img class="book-img" src="/static/book2.jpeg">
+                        <button class="add-to-cart-button" onclick="addToCart('B2', 19.0,'/static/book2.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="book-container">
+                        <img class="book-img" src="/static/book3.jpeg">
+                        <button class="add-to-cart-button" onclick="addToCart('B3', 20.0,'/static/book3.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="book-container">
+                        <img class="book-img" src="/static/book4.jpeg">
+                        <button class="add-to-cart-button" onclick="addToCart('B4', 49.0,'/static/book4.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="book-container">
+                        <img class="book-img" src="/static/book5.jpg">
+                        <button class="add-to-cart-button" onclick="addToCart('B5', 39.0,'/static/book5.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="book-container">
+                        <img class="book-img" src="/static/book6.jpg">
+                        <button class="add-to-cart-button" onclick="addToCart('B6', 59.0,'/static/book6.jpeg')">Add to Cart</button>
+                    </div>
+                </div>
+                <div id="cart">
+                    <h2>Shopping Cart</h2>
+                    <ul id="cart-items">
+                        <!-- Cart items will be displayed here --></ul>
+                    <!-- Cart items will be displayed here -->
+                </ul>
+                <button class="checkout-button" onclick="checkoutCart()">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p>Contact information</p>
         </div>
-        <div class="book-container">
-          <img class="book-img" src="/static/book2.jpeg">
-          <button class="add-to-cart-button">Add to Cart</button>
+        <div class="static-pages">
+            <ul>
+                <li>
+                    <a href="pages/about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="pages/contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="pages/privacy.html">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="pages/terms.html">Terms of Service</a>
+                </li>
+            </ul>
         </div>
-        <div class="book-container">
-          <img class="book-img" src="/static/book3.jpeg">
-          <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-        <div class="book-container">
-          <img class="book-img" src="/static/book4.jpeg">
-          <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-        <div class="book-container">
-          <img class="book-img" src="/static/book5.jpg">
-          <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-        <div class="book-container">
-          <img class="book-img" src="/static/book6.jpg">
-          <button class="add-to-cart-button">Add to Cart</button>
-        </div>
-      </div>
-      
-    </section>
-  </main>
+        <script>
+                  const cartItems = {}; // Store cart items and quantities
 
-  <footer>
-    <div class="contact-info">
-      <p>Contact information</p>
-    </div>
-    <div class="static-pages">
-      <ul>
-        <li><a href="pages/about.html">About Us</a></li>
-        <li><a href="pages/contact.html">Contact Us</a></li>
-        <li><a href="pages/privacy.html">Privacy Policy</a></li>
-        <li><a href="pages/terms.html">Terms of Service</a></li>
-      </ul>
-    </div>
-  </footer>
+function addToCart(itemName, itemPrice, itemImage) {
+    if (cartItems[itemName]) {
+        // If the item is already in the cart, increment the quantity
+        cartItems[itemName].quantity++;
+        updateCartItem(itemName);
+    } else {
+        // If the item is not in the cart, add it with quantity 1
+        cartItems[itemName] = { price: itemPrice, quantity: 1, image: itemImage };
+        createCartItem(itemName);
+    }
+}
+
+function createCartItem(itemName) {
+    const cartItem = document.createElement("li");
+    cartItem.innerHTML = `
+        <img src="${cartItems[itemName].image}" alt="${itemName}">
+        <span>Quantity: ${cartItems[itemName].quantity}</span>
+        <span>$${cartItems[itemName].price} each</span>
+    `;
+
+    document.getElementById("cart-items").appendChild(cartItem);
+}
+
+function updateCartItem(itemName) {
+    const cartItem = document.querySelector(`#cart-items img[alt="${itemName}"]`).parentNode;
+    cartItem.querySelector("span").textContent = `Quantity: ${cartItems[itemName].quantity}`;
+}
+
+function checkoutCart() {
+    // Implement your checkout logic here, e.g., redirect to a checkout page or show a summary.
+    alert("You are checking out. Implement your checkout logic here.");
+}
+        </script>
+    </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
