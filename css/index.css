@@ -16,26 +16,26 @@
 
 .search input[type="text"] {
   padding: 10px;
-  width: 250px; /* Adjusted width for better visibility */
+  width: 250px; 
   border-radius: 10px;
-  border: 1px solid var(--primary-color); /* Added border for better visibility */
+  border: 1px solid var(--primary-color); 
 }
 
 .search button[type="submit"] {
   padding: 10px 20px;
-  background-color: var(--primary-color); /* Adjusted button color */
+  background-color: var(--primary-color); 
   color: var(--text-color-light);
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  margin-left: 10px; /* Added margin for better alignment */
+  margin-left: 10px; 
 }
 
-/* Featured books section styles */
+
 .featured-books {
   padding: 20px;
   overflow: hidden;
-  text-align: center; /* Centered the content */
+  text-align: center;
 }
 
 .featured-books h2 {
@@ -44,14 +44,14 @@
 }
 
 .img-container {
-  display: flex; /* Changed class name to better represent its purpose */
-  justify-content: space-around; /* Adjusted to evenly distribute the images */
+  display: flex; 
+  justify-content: space-around; 
 }
 
 .img-container img {
-  width: 100px; /* Adjusted image width for better display */
+  width: 100px; 
   padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #ddd; /* Added border for better separation */
-  border-radius: 5px; /* Added border radius for a better look */
+  border: 1px solid #ddd; 
+  border-radius: 5px;
 }
