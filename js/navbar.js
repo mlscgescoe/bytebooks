@@ -38,8 +38,8 @@ window.addEventListener('DOMContentLoaded', () => {
     navbarDiv.appendChild(nav);
 
     // Add CSS styles to make text bold
-    const navLinks = nav.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
+    const navLinksNew = nav.querySelectorAll('.nav-link');
+    navLinksNew.forEach(link => {
         link.style.textDecoration = 'none';
         link.style.color = 'white';
         link.style.marginRight = '10px'; // Add margin to the right
