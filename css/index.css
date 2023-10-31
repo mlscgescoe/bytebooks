@@ -16,26 +16,23 @@
 
 .search input[type="text"] {
   padding: 10px;
-  width: 250px; 
+  width: 190px;
   border-radius: 10px;
-  border: 1px solid var(--primary-color); 
 }
 
 .search button[type="submit"] {
   padding: 10px 20px;
-  background-color: var(--primary-color); 
+  background-color: #333;
   color: var(--text-color-light);
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  margin-left: 10px; 
 }
 
-
+/* Featured books section styles */
 .featured-books {
   padding: 20px;
   overflow: hidden;
-  text-align: center;
 }
 
 .featured-books h2 {
@@ -43,15 +40,14 @@
   padding: 10px;
 }
 
-.img-container {
-  display: flex; 
-  justify-content: space-around; 
+.img1 {
+  width: 150px;
+  display: flex;
 }
 
-.img-container img {
-  width: 100px; 
+.img1 img {
+  width: 100%;
   padding: 10px;
+  float: left;
   box-sizing: border-box;
-  border: 1px solid #ddd; 
-  border-radius: 5px;
 }
