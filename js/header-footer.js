@@ -9,10 +9,10 @@ window.addEventListener('DOMContentLoaded', () => {
         <h2 class="site-name">E-Library</h2>
         <ul class="navbar-links">
         <li class="nav-links"><a href="/">Home</a></li>
-        <li class="nav-links"><a href="books.html">Books</a></li>
-        <li class="nav-links"><a href="login.html">Log In</a></li>
-        <li class="nav-links"><a href="about-us.html">About Us</a></li>
-        <li class="nav-links"><a href="contact.html">Contact Us</a></li>
+        <li class="nav-links"><a href="../pages/books.html">Books</a></li>
+        <li class="nav-links"><a href="../pages/login.html">Log In</a></li>
+        <li class="nav-links"><a href="../pages/about-us.html">About Us</a></li>
+        <li class="nav-links"><a href="../pages/contact.html">Contact Us</a></li>
         </ul>
     `;
 
@@ -24,10 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="static-pages">
         <ul>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="../pages/about-us.html">About Us</a></li>
+            <li><a href="../pages/contact.html">Contact Us</a></li>
+            <li><a href="../pages/privacy.html">Privacy Policy</a></li>
+            <li><a href="../pages/terms.html">Terms of Service</a></li>
         </ul>
         </div>
     `;

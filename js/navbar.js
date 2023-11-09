@@ -15,16 +15,16 @@ window.addEventListener('DOMContentLoaded', () => {
                 <a href="../index.html" class="nav-link">Home</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="books.html" class="nav-link">Books</a>
+                <a href="../pages/books.html" class="nav-link">Books</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="../pages/about-us.html" class="nav-link">About Us</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="../pages/contact.html" class="nav-link">Contact</a>
             </li>
             <li style="display: inline; margin-left: 10px;">
-                <a href="login.html" class="nav-link">Log In</a>
+                <a href="../pages/login.html" class="nav-link">Log In</a>
             </li>
         </ul>
     `;
